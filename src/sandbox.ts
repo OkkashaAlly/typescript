@@ -1,32 +1,23 @@
-// Variables
-let fullName: string = "Okkasha";
-let age: number = 22;
-let isMarried: boolean = false;
+class Invoice {
+  client: string;
+  details: string;
+  amount: number;
 
-// Arrays
-let friends: string[] = [];
-friends = ["Omar", "Ismail"];
+  constructor(c: string, d: string, a: number) {
+    this.client = c;
+    this.details = d;
+    this.amount = a;
+  }
 
-// Union
-let mixed: (string | number | boolean)[] = ["Okkasha", false, 123];
-let uid: string | number;
-uid = 22;
-uid = "abc";
+  format() {
+    return `${this.client} owes $${this.amount} for ${this.details}`;
+  }
+}
 
-// Object
-let myObj: {
-  name: string;
-  age: number;
-  isMarried: boolean;
-};
+const invoiceOne = new Invoice("Okkasha", "Website redesign", 500);
 
-myObj = { name: "Okkasha", age: 22, isMarried: false };
+let invoiceList: Invoice[] = [];
 
-// Dynamic (any)
-let me: any;
+invoiceList.push(invoiceOne);
 
-let mixed2: any[] = [];
-mixed.push("Okkasha");
-mixed.push(2);
-
-let newObj: { name: any; age: any };
+console.log(invoiceList);

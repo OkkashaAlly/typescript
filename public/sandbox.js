@@ -1,22 +1,15 @@
 "use strict";
-// Variables
-let fullName = "Okkasha";
-let age = 22;
-let isMarried = false;
-// Arrays
-let friends = [];
-friends = ["Omar", "Ismail"];
-// Union
-let mixed = ["Okkasha", false, 123];
-let uid;
-uid = 22;
-uid = "abc";
-// Object
-let myObj;
-myObj = { name: "Okkasha", age: 22, isMarried: false };
-// Dynamic (any)
-let me;
-let mixed2 = [];
-mixed.push("Okkasha");
-mixed.push(2);
-let newObj;
+class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client} owes $${this.amount} for ${this.details}`;
+    }
+}
+const invoiceOne = new Invoice("Okkasha", "Website redesign", 500);
+let invoiceList = [];
+invoiceList.push(invoiceOne);
+console.log(invoiceList);
