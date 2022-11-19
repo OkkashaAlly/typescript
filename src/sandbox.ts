@@ -1,32 +1,9 @@
-// Variables
-let fullName: string = "Okkasha";
-let age: number = 22;
-let isMarried: boolean = false;
+const add = (a: number, b: number) => a + b;
 
-// Arrays
-let friends: string[] = [];
-friends = ["Omar", "Ismail"];
+const result = add(5, 19);
 
-// Union
-let mixed: (string | number | boolean)[] = ["Okkasha", false, 123];
-let uid: string | number;
-uid = 22;
-uid = "abc";
-
-// Object
-let myObj: {
-  name: string;
-  age: number;
-  isMarried: boolean;
+const myFunction = (a: number, b: number = 4, c?: string): void => {
+  console.log(a - b);
 };
 
-myObj = { name: "Okkasha", age: 22, isMarried: false };
-
-// Dynamic (any)
-let me: any;
-
-let mixed2: any[] = [];
-mixed.push("Okkasha");
-mixed.push(2);
-
-let newObj: { name: any; age: any };
+myFunction(10);
