@@ -1,21 +1,22 @@
+"use strict";
 // Variables
-var fullName = "Okkasha";
-var age = 22;
-var isMarried = false;
+let fullName = "Okkasha";
+let age = 22;
+let isMarried = false;
 // Arrays
-var friends = [];
+let friends = [];
 friends = ["Omar", "Ismail"];
 // Union
-var mixed = ["Okkasha", false, 123];
-var uid;
+let mixed = ["Okkasha", false, 123];
+let uid;
 uid = 22;
 uid = "abc";
 // Object
-var myObj;
+let myObj;
 myObj = { name: "Okkasha", age: 22, isMarried: false };
 // Dynamic (any)
-var me;
-var mixed2 = [];
+let me;
+let mixed2 = [];
 mixed.push("Okkasha");
 mixed.push(2);
-var newObj;
+let newObj;
