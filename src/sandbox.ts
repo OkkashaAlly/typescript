@@ -8,5 +8,5 @@ const amount = document.querySelector("#amount") as HTMLInputElement;
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
 
-  console.table(type.value, tofrom.value, details.value, amount.valueAsNumber);
+  console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
