@@ -1,22 +1,10 @@
 "use strict";
-// Variables
-let fullName = "Okkasha";
-let age = 22;
-let isMarried = false;
-// Arrays
-let friends = [];
-friends = ["Omar", "Ismail"];
-// Union
-let mixed = ["Okkasha", false, 123];
-let uid;
-uid = 22;
-uid = "abc";
-// Object
-let myObj;
-myObj = { name: "Okkasha", age: 22, isMarried: false };
-// Dynamic (any)
-let me;
-let mixed2 = [];
-mixed.push("Okkasha");
-mixed.push(2);
-let newObj;
+const form = document.querySelector("form");
+const type = document.querySelector("#type");
+const tofrom = document.querySelector("#tofrom");
+const details = document.querySelector("#details");
+const amount = document.querySelector("#amount");
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.table(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});

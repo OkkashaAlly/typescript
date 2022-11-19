@@ -1,32 +1,12 @@
-// Variables
-let fullName: string = "Okkasha";
-let age: number = 22;
-let isMarried: boolean = false;
+const form = document.querySelector("form")!;
 
-// Arrays
-let friends: string[] = [];
-friends = ["Omar", "Ismail"];
+const type = document.querySelector("#type") as HTMLSelectElement;
+const tofrom = document.querySelector("#tofrom") as HTMLInputElement;
+const details = document.querySelector("#details") as HTMLInputElement;
+const amount = document.querySelector("#amount") as HTMLInputElement;
 
-// Union
-let mixed: (string | number | boolean)[] = ["Okkasha", false, 123];
-let uid: string | number;
-uid = 22;
-uid = "abc";
+form.addEventListener("submit", (e: Event) => {
+  e.preventDefault();
 
-// Object
-let myObj: {
-  name: string;
-  age: number;
-  isMarried: boolean;
-};
-
-myObj = { name: "Okkasha", age: 22, isMarried: false };
-
-// Dynamic (any)
-let me: any;
-
-let mixed2: any[] = [];
-mixed.push("Okkasha");
-mixed.push(2);
-
-let newObj: { name: any; age: any };
+  console.table(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});
