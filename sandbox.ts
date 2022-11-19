@@ -21,3 +21,12 @@ let myObj: {
 };
 
 myObj = { name: "Okkasha", age: 22, isMarried: false };
+
+// Dynamic (any)
+let me: any;
+
+let mixed2: any[] = [];
+mixed.push("Okkasha");
+mixed.push(2);
+
+let newObj: { name: any; age: any };

@@ -13,3 +13,9 @@ uid = "abc";
 // Object
 var myObj;
 myObj = { name: "Okkasha", age: 22, isMarried: false };
+// Dynamic (any)
+var me;
+var mixed2 = [];
+mixed.push("Okkasha");
+mixed.push(2);
+var newObj;
